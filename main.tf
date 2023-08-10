@@ -26,7 +26,7 @@ resource "aws_db_subnet_group" "main" {
   name       = "${var.name}-${var.env}-sg"
   subnet_ids = var.subnets
 
-  tags = merge(var.tags,{ Name = "${var.name}-${var.env}-sg"})
+  tags = merge(var.tags, { Name = "${var.name}-${var.env}-sg" })
 }
 
 resource "aws_db_parameter_group" "main" {
